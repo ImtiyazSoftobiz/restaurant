@@ -1,0 +1,158 @@
+
+:root {
+    --eggshell: #f4f1deff;
+    --terra-cotta: #e07a5fff;
+    --independence: #3d405bff;
+    --green-sheen: #81b29aff;
+    --deep-champagne: #f2cc8fff;
+    --parisienne-font: "Parisienne";
+    --great-vibes-font: "Great Vibes";
+}
+
+html, body {
+    width: 100%;
+    margin: 0px;
+}
+
+body {
+    background-image: url('./images/cafe.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Header.js */
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3243db4d;
+    text-align: center;
+    width: 70vw;
+    padding: 50px 75px;
+    padding-bottom: 0px;
+}
+
+#header > p {
+    color: var(--eggshell);
+    font-family: "Parisienne";
+    margin: 0;
+    font-weight: bold;
+    
+}
+
+hr {
+    width: 100%;
+}
+
+.logo {
+    font-size: 3em;
+}
+
+.slogan {
+    font-size: 1.5em;
+}
+
+
+/* Navbar.js */
+
+#nav {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav > div {
+    padding: 0px 50px;
+}
+
+#nav > div:hover {
+    background-color: rgba(256, 256, 256, 0.2);
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid var(--eggshell);
+}
+
+#nav > div > p {
+    color: #0c0a00;
+    font-family: var(--great-vibes-font);
+    font-size: 3em;
+    margin: 22px 0px;
+    font-weight: bold;
+}
+
+/* MAIN-PAGE.JS CSS */
+
+#main {
+    width: 60vw;
+    padding: 50px 75px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    border-radius: 1%;
+}
+
+#main > img {
+    width: 65vw;
+    
+}
+
+#main > p {
+    font-size: 3em;
+    text-shadow: 0 0 rgb(180, 240, 58);
+}
+
+/* MENU-PAGE.JS */
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#menu > div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5vw;
+    background-color: rgba(240, 248, 255, 0.226);
+    width: 400px;
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+#menu > div > img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#menu > div > p {
+    font-size: 1.5em;
+    font-family: 'Nuoso SIL';
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#about-text {
+    color: var(--eggshell);
+    font-size: 1.5em;
+}
+
+#about-div {
+    background-color: rgb(17 37 222 / 31%);
+    padding: 26px;
+    border-radius: 6%;
+}
